@@ -1,4 +1,4 @@
-package com.leisa.microservice.individual.config;
+package com.leisa.microservice.consume.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -10,9 +10,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.leisa.microservice</groupId>
-    <artifactId>publish_message_to_individual</artifactId>
+    <artifactId>consume_message</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>publish_message_to_individual</name>
+    <name>consume_message</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>17</java.version>
@@ -90,6 +90,28 @@
 
 
 <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-websocket</artifactId>
+</dependency>
+
+   <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-amqp</artifactId>
+    </dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-reactor-netty</artifactId>
+		</dependency>
+
+        <dependency>
+    <groupId>com.rabbitmq</groupId>
+    <artifactId>amqp-client</artifactId>
+    <version>5.19.0</version>
+</dependency>
+
+        
+<dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-core</artifactId>
 </dependency>
@@ -109,11 +131,7 @@
 </dependency>
 
 
-<dependency>
-    <groupId>com.rabbitmq</groupId>
-    <artifactId>amqp-client</artifactId>
-    <version>5.11.0</version> <!-- Check for the latest version -->
-</dependency>
+
 
     <!-- HttpClient (Apache HttpComponents) -->
     <dependency>

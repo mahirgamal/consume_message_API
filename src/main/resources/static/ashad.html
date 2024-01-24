@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Client</title>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs/lib/stomp.min.js"></script>
+</head>
+<body>
+    <h2>WebSocket Messages</h2>
+    <textarea id="messageArea" rows="10" cols="50"></textarea>
+
+    <script>
+        var baseUrl = window.location.origin;
+var socketUrl = baseUrl + '/websocket-app';
+messageArea.value += 'Connecting to WebSocket at:'+ socketUrl + '\n';
+var socket = new SockJS(socketUrl);
+
+        //var socket = new SockJS('/websocket-app');
+        var stompClient = Stomp.over(socket);
+
+        stompClient.connect({}, function (frame) {
+            console.log('Connected: ' + frame);
+            stompClient.subscribe('/topic/ashad_b6X0m3gyXm', function (messageOutput) {
+                var messageArea = document.getElementById('messageArea');
+                messageArea.value += "Received: " + messageOutput.body + '\n';
+            });
+        });
+
+        // Handle errors
+        stompClient.onclose = function() {
+            messageArea.value +="Websocket connection closed"+ '\n';
+        };
+        stompClient.onerror = function(error) {
+            messageArea.value +="Websocket encountered error: "+ error+ '\n';
+        };
+    </script>
+</body>
+</html>

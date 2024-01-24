@@ -1,9 +1,10 @@
-package com.leisa.microservice.individual.repository;
+package com.leisa.microservice.consume.repository;
 
-import com.leisa.microservice.individual.model.QueueMapping;
-import com.leisa.microservice.individual.model.QueueMappingKey;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.leisa.microservice.consume.model.QueueMapping;
+import com.leisa.microservice.consume.model.QueueMappingKey;
 
 import java.util.List;
 

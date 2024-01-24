@@ -1,4 +1,4 @@
-package com.leisa.microservice.individual.repository;
+package com.leisa.microservice.consume.repository;
 
 import java.util.Optional;
 
@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.leisa.microservice.individual.model.User;
+import com.leisa.microservice.consume.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {

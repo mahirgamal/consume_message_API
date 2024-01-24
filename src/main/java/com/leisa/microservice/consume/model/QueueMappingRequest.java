@@ -1,4 +1,4 @@
-package com.leisa.microservice.individual.model;
+package com.leisa.microservice.consume.model;
 
 
 public class QueueMappingRequest {

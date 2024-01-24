@@ -1,10 +1,10 @@
-package com.leisa.microservice.individual;
+package com.leisa.microservice.consume;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PublishMessageToQueueApplicationTests {
+class ConsumeMessageApplicationTests {
 
 	@Test
 	void contextLoads() {

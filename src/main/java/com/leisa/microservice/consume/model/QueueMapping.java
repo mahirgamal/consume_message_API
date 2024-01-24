@@ -1,4 +1,4 @@
-package com.leisa.microservice.individual.model;
+package com.leisa.microservice.consume.model;
 
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;

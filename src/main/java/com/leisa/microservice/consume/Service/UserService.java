@@ -1,9 +1,9 @@
-package com.leisa.microservice.individual.Service;
+package com.leisa.microservice.consume.Service;
 
 import org.springframework.stereotype.Service;
 
-import com.leisa.microservice.individual.model.User;
-import com.leisa.microservice.individual.repository.UserRepository;
+import com.leisa.microservice.consume.model.User;
+import com.leisa.microservice.consume.repository.UserRepository;
 
 /*import java.util.List;
 import java.util.Optional;

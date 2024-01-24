@@ -1,4 +1,4 @@
-package com.leisa.microservice.individual.model;
+package com.leisa.microservice.consume.model;
 
 import java.io.Serializable;
 import java.util.Objects;
