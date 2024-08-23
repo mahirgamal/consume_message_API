@@ -85,10 +85,12 @@ We acknowledge that this work originates from the Trakka project and builds on t
 
 
 ## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under Apache License 2.0 - see the [LICENSE][lic] file for details.
 
 ## Contact
 If you have any questions, suggestions or need assistance, please don't hesitate to contact us at mhabib@csu.edu.au, akabir@csu.edu.au.
+
+[//]: #
+  [lic]: <https://github.com/mahirgamal/consume_message_API/blob/main/LICENSE>
 
 
