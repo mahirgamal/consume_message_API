@@ -3,7 +3,17 @@
 
 ## Overview
 
-This project is a Spring Boot application designed to handle user management with integrated WebSocket messaging support. It features secure user authentication and real-time message consuming through WebSockets.
+This API (microservices) is a Spring Boot application designed to handle user management with integrated WebSocket messaging support. It features secure user authentication and real-time message consuming through WebSockets. This microservice is part of the Livestock Event Information Sharing Architecture (LEISA), facilitating efficient and standardised data exchange in the livestock industry.
+
+## Related Projects
+
+- [LEI Schema](https://github.com/mahirgamal/LEI-schema): Defines the standardized schema for livestock event information.
+- [LEISA](https://github.com/mahirgamal/LEISA): The architecture framework for sharing livestock event information.
+- [LEI2JSON](https://github.com/mahirgamal/LEI2JSON): A tool to convert LEI data into JSON format for easy processing.
+- [AgriVet Treatment Grapher](https://github.com/mahirgamal/AgriVet-Treatment-Grapher): A Python-based tool designed to visualise treatment data for animals, helping veterinarians and researchers analyse treatment patterns and dosages.
+- [Cattle Location Monitor](https://github.com/mahirgamal/Cattle-Location-Monitor): A system that monitors cattle location using GPS data to provide real-time insights into cattle movements and positioning.
+
+
 
 ## Features
 
