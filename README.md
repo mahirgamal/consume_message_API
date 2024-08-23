@@ -1,9 +1,9 @@
 
-# User Management and WebSocket Messaging Application
+# Consume Message API
 
 ## Overview
 
-This project is a Spring Boot application designed to handle user management with integrated WebSocket messaging support. It features secure user authentication and real-time message broadcasting through WebSockets.
+This project is a Spring Boot application designed to handle user management with integrated WebSocket messaging support. It features secure user authentication and real-time message consuming through WebSockets.
 
 ## Features
 
