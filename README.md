@@ -23,24 +23,59 @@ The application is structured using a layered architecture:
 
 ## Project Structure
 
-### Java Files
-
-- **`UserService.java`**: Manages user-related services.
-- **`CustomUserDetailsService.java`**: Custom implementation for Spring Security's user details.
-- **`UserRepository.java`**: Interface for user-related database operations.
-- **`QueueMappingRepository.java`**: Manages user-queue mappings for messaging.
-- **`User.java`**: Entity class representing a user.
-- **`WebSocketMessageService.java`**: Handles WebSocket message processing.
-- **`MessageController.java`**: REST controller for managing message endpoints.
-- **`WebSocketConfig.java`**: Configures WebSocket endpoints.
-- **`WebSocketController.java`**: Manages WebSocket message flow.
-- **`SecurityConfig.java`**: Configures security settings, including authentication.
-
-### Additional Files
-
-- **`application.properties`**: Contains Spring Boot application configuration settings.
-- **`config.json`**: Defines message broker settings, such as protocol, host, port, and credentials.
-- **`WebSocketController.js`**: JavaScript controller for managing WebSocket connections and messages on the client side.
+```
+/project-root
+│
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── leisa
+│   │   │           └── microservice
+│   │   │               └── consume
+│   │   │                   ├── config
+│   │   │                   │   └── SecurityConfig.java
+│   │   │                   │   └── WebSocketConfig.java
+│   │   │                   │
+│   │   │                   ├── controller
+│   │   │                   │   ├── MessageController.java
+│   │   │                   │   ├── WebSocketController.java
+│   │   │                   │   └── WebSocketMessageService.java
+│   │   │                   │
+│   │   │                   ├── model
+│   │   │                   │   ├── QueueMapping.java
+│   │   │                   │   ├── QueueMappingKey.java
+│   │   │                   │   ├── QueueMappingRequest.java
+│   │   │                   │   └── User.java
+│   │   │                   │
+│   │   │                   ├── repository
+│   │   │                   │   ├── QueueMappingRepository.java
+│   │   │                   │   └── UserRepository.java
+│   │   │                   │
+│   │   │                   └── service
+│   │   │                   │   ├── CustomUserDetailsService.java
+│   │   │                   │   └── UserService.java
+│   │   │                   │
+│   │   │                   └── ConsumeMessageApplication.java
+│   │   │
+│   │   ├── resources
+│   │   │   ├── application.properties
+│   │   │   └── config.json
+│   │   │
+│   │   └── webapp
+│   │       └── js
+│   │           └── WebSocketController.js
+│   │
+│   └── test
+│       └── java
+│           └── com
+│               └── leisa
+│                   └── microservice
+│                       └── consume
+│                           └── ExampleTest.java
+│
+└── pom.xml
+```
 
 ## Getting Started
 
@@ -55,11 +90,11 @@ The application is structured using a layered architecture:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
+    git clone https://github.com/mahirgamal/consume_message_API.git
     ```
 2. **Navigate to the project directory**:
     ```bash
-    cd your-repo-name
+    cd consume_message_API
     ```
 3. **Configure the application**:
    - Edit `application.properties` for database settings.
