@@ -27,9 +27,9 @@ This API (microservices) is a Spring Boot application designed to handle user ma
 
 The application is structured using a layered architecture:
 
-1. **Controller Layer**: Handles HTTP and WebSocket requests, routing them to the appropriate services.
-2. **Service Layer**: Contains business logic for managing users and WebSocket messages.
-3. **Repository Layer**: Manages database interactions for user and message data.
+1. **Domain Layer**: Contains the core business logic, including entities, value objects, and domain services that encapsulate the business rules and operations for message consumption and processing.
+2. **Application Layer**: Orchestrates the application’s use cases, coordinating the interaction between the domain layer and other parts of the application. This layer contains application services and use case classes.
+3. **Infrastructure Layer**: Handles technical details such as database interactions, messaging systems, and external service integrations. This layer implements repository interfaces defined in the domain layer to manage message data.
 
 ## Project Structure
 
